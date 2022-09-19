@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Labas, ne iki galo supratau užduotį.. užvesk kursorių ant kvadrato</h1>
+    <script>
+        const newDiv = document.createElement("div");
+        newDiv.setAttribute("class", "myDiv");
+        document.body.appendChild(newDiv);
+
+        const changeColor1 = () => {
+            newDiv.style.backgroundColor = "red";
+            newDiv.style.width = "300px"
+            newDiv.style.height = "300px"
+        };
+
+        const changeColor2 = () => {
+            newDiv.style.backgroundColor = "green";
+            newDiv.style.width = "200px"
+            newDiv.style.height = "200px"
+        };
+
+        newDiv.addEventListener("mouseover", changeColor1);
+        newDiv.addEventListener("mouseout", changeColor2);
+
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- 2. Pasiruošimas:
+a. Susikurti HTML, CSS, JS boilerplate failus.
+
+2.1 Sukurti su JS pagalbą elemneta div.
+2.2 Naudojant js div elementui priskirti css stilius, kurie jau turi buti css faile. (pltotis 200px, aukštis 200px, fono spalva žalia)
+2.3 Po 3sek. div fono spalva turi pasikisti į raudona. -->
